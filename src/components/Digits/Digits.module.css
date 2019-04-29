@@ -1,0 +1,6 @@
+.app__counter_digits {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    align-items: center;
+    justify-content: center; }
