@@ -1,0 +1,14 @@
+.app__digit {
+    display: flex;
+    align-items: center;
+    font-family: "Segment7Standard";
+    height: 70px;
+    width: 2rem;
+    color: red;
+    font-size: 2.5rem;
+    padding: 0.8rem 1.6rem;
+    margin: 0 1rem;
+    border: 3px solid orange;
+    border-radius: 5px;
+    background-color: #000; 
+}
