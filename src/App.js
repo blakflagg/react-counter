@@ -41,8 +41,8 @@ class App extends Component {
   decrementCounter = () => {
     const currentCounter2 = this.state.counter.counter2;
     const currentCounter1 = this.state.counter.counter1;
-    if (currentCounter2 <= 1) {
-      if (currentCounter1 <= 1) {
+    if (currentCounter2 == 0) {
+      if (currentCounter1 == 0) {
         this.setState({
           counter: {
             counter1: 9,
@@ -73,10 +73,10 @@ class App extends Component {
     return (
       <div className="wrapper">
         <div className="app">
-          <Counter 
-            counter1={this.state.counter.counter1} 
-            counter2={this.state.counter.counter2} 
-            incrementCounter={this.incrementCounter} 
+          <Counter
+            counter1={this.state.counter.counter1}
+            counter2={this.state.counter.counter2}
+            incrementCounter={this.incrementCounter}
             decrementCounter={this.decrementCounter}
             saveCounter={this.saveCounter} />
           <CounterList itemList={this.state.counterList} />
